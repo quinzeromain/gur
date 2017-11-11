@@ -1,2 +1,3 @@
-# Ignore _logs directory
+# Ignore specific file and directory
 _logs
+repositories.txt
