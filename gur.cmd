@@ -10,6 +10,7 @@ if "%1"=="-clean" GOTO CleanUpLogs
 if "%1"=="-h" GOTO Help
 if "%1"=="" (
 	set configfile=%currentDir%repositories.txt
+	if not exist %configfile% echo "" >> %currentDir%repositories.txt
 ) else (
 	set configfile=%1
 )
