@@ -5,12 +5,13 @@ set MyDate=%date:~10,4%%date:~4,2%%date:~7,2%
 set MyTime=%time:~0,2%%time:~3,2%%time:~6,2%
 if "%MyTime~0,1%"==" " set MyTime = 0%MyTime:~1%
 set pathlog=%currentDir%_logs\gur-%MyDate%%MyTime%.txt
+set empty=""
 
 if "%1"=="-clean" GOTO CleanUpLogs
 if "%1"=="-h" GOTO Help
 if "%1"=="" (
 	set configfile=%currentDir%repositories.txt
-	if not exist %configfile% echo "" >> %currentDir%repositories.txt
+	if not exist %configfile% echo %empty% >> %currentDir%repositories.txt
 ) else (
 	set configfile=%1
 )
