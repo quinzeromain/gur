@@ -1,5 +1,1 @@
-C:\Github\v3\DotCa integration
-C:\Github\v3\DotCa_Pages dev
-C:\Github\v4\DotCa develop
-C:\Github\v4\DotCa_Pages develop
-C:\Github\Plateforme dev
+
